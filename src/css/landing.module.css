@@ -1,0 +1,42 @@
+.landingMain {
+  background-image: url("../image/large-home-banner.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 500px;
+  width: 101%;
+  margin: auto;
+  margin-left: -7px;
+  margin-top: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 38%;
+  background: #ffffff;
+  margin: auto;
+  margin-top: 8%;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 0px;
+  padding-bottom: 20px;
+}
+
+.card_top {
+  background: #f6f6f6;
+  text-align: center;
+  padding: 30px;
+  position: relative;
+  margin-top: 0px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+
+@media all and (min-width:0px) and (max-width:900px){
+  .card {
+    width: 70%;
+    margin-top: 60px;
+  }
+}

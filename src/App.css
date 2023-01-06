@@ -1,0 +1,12 @@
+.App {
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  font-family: adobe-clean, sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: transparent;
+}

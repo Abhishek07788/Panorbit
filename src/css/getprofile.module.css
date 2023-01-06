@@ -1,0 +1,39 @@
+
+.card_bottom {
+    margin-top: 0px;
+    padding: 0px 30px;
+    height: 400px;
+    overflow-x: auto;
+    background: #ffffff;
+    cursor: pointer;
+  }
+  
+  .maping_div {
+    display: flex;
+    margin-top: 0px;
+    align-items: center;
+    gap: 20px;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .maping_div > img {
+    border-radius: 50px;
+    width: 35px;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .maping_div > p {
+    font-weight: 400;
+    font-size: 17px;
+    margin: 0px;
+    padding: 0px;
+    color: rgb(56, 53, 53);
+  }
+  .maping_div > p:hover {
+    color: rgb(158, 56, 56);
+  }
+  
+
+  
