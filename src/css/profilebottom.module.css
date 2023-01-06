@@ -1,0 +1,125 @@
+.mainDiv {
+  display: flex;
+  width: 100%;
+}
+
+/* -------------- (vertical line) -------- */
+.vl {
+  border-left: 1px solid grey;
+  height: 600px;
+  width: 0%;
+}
+/* ---------- (left side )--------*/
+
+.leftSide {
+  text-align: center;
+  /* background: #000; */
+  padding: 20px;
+  margin-right: 25px;
+}
+
+.leftSide > img {
+  width: 200px;
+  border-radius: 100px;
+  margin-top: 25px;
+  margin-top: 0px;
+}
+.leftSide > p {
+  width: 300px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(66, 65, 65);
+  margin-top: 5px;
+}
+
+.leftSide > h2 {
+  width: 320px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: grey;
+  margin-top: 5px;
+  font-weight: 400;
+}
+
+.leftSide > h2 > span {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(66, 65, 65);
+  margin-top: 5px;
+}
+
+.leftSide > hr {
+  width: 280px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(66, 65, 65);
+  margin-top: 5px;
+  margin-left: 40px;
+}
+
+/* -------------- (right side)---------- */
+.rightSide {
+  /* background: #000; */
+  width: 100%;
+  text-align: left;
+  padding-left: 80px;
+}
+
+.rightSide > h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: grey;
+  margin-top: 5px;
+  font-weight: 400;
+}
+
+.address {
+  margin-left: 30px;
+}
+
+.address > h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: grey;
+  margin-top: 5px;
+  font-weight: 400;
+}
+
+.address > h2 > span {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(66, 65, 65);
+  margin-top: 5px;
+}
+
+/* ---------- (map)------ */
+.Map {
+  border-radius: 20px;
+}
+
+.geo {
+  display: flex;
+  gap: 30px;
+  justify-content: right;
+  padding-right: 25px;
+  margin-top: 10px;
+}
+
+.geo > p {
+  font-size: 15px;
+  font-weight: 600;
+  color: grey;
+  margin-top: 5px;
+  font-weight: 400;
+}
+
+.geo > p > span {
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(66, 65, 65);
+  margin-top: 5px;
+}

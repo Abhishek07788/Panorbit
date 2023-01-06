@@ -1,0 +1,67 @@
+.HomeMain {
+  display: flex;
+  width: 95%;
+  margin: auto;
+  gap: 25px;
+}
+
+/* --------------- left navbar ----------- */
+.mainDiv{
+  background: linear-gradient(180deg, #395bc8 0%, #5e3bc8 100%);
+  width: 12%;
+  /* height: 600px; */
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-top: 20px;
+  padding: 45px;
+  text-align: left;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 400;
+  padding-top: 17%;
+}
+
+.mainDiv > hr {
+  color: #ffffff0c;
+  border-radius: 30px;
+}
+
+.mainDiv > p {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+/* ----------- Profile top ---------- */
+.profile_top {
+  width: 93%;
+  padding: 0px 30px;
+  margin-top: 30px;
+}
+
+.profile_top > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profile_top > div > h2 {
+  color: rgba(39, 38, 38, 0.822);
+}
+
+/* ---------------- Profile ----------- */
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.profile > img {
+  width: 35px;
+  border-radius: 50px;
+}
+
+.profile > p {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(56, 55, 55, 0.822);
+}
