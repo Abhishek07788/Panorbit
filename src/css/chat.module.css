@@ -1,0 +1,84 @@
+.mainDiv {
+  width: 250px;
+  float: right;
+  background: #2c65c8;
+  margin-right: 0px;
+  border-radius: 15px;
+  position: relative;
+  z-index: 100;
+  margin-bottom: 30px;
+}
+
+.chat {
+  color: #ffffff;
+  text-align: center;
+  padding: 0px;
+  font-size: 19px;
+  font-weight: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 16px;
+  padding-left: 16px;
+  font-weight: 600;
+}
+
+.chat > div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.profiles {
+  margin-left: -20px;
+  width: 100%;
+  height: 300px;
+  background: #000;
+  overflow: hidden;
+  border: 1px solid #2c65c8;
+  padding: -10px;
+}
+
+/* ----------- profile --------- */
+
+.profiles {
+  margin-top: 0px;
+  padding: 0px 6px;
+  height: 260px;
+  overflow-x: auto;
+  background: #ffffff;
+  cursor: pointer;
+  width: 236px;
+  margin: auto;
+  margin-top: -10px;
+  overflow: auto;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.maping_div {
+  display: flex;
+  margin-top: 0px;
+  align-items: center;
+  gap: 10px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.maping_div > img {
+  border-radius: 50px;
+  width: 30px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.maping_div > p {
+  font-weight: 400;
+  font-size: 15px;
+  margin: 0px;
+  padding: 0px;
+  color: rgb(56, 53, 53);
+}
+.maping_div > p:hover {
+  color: rgb(158, 56, 56);
+}

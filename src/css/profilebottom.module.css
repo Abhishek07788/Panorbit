@@ -5,8 +5,8 @@
 
 /* -------------- (vertical line) -------- */
 .vl {
-  border-left: 1px solid grey;
-  height: 600px;
+  border-left: 1px solid rgba(186, 184, 184, 0.753);
+  height: 650px;
   width: 0%;
 }
 /* ---------- (left side )--------*/
@@ -14,8 +14,19 @@
 .leftSide {
   text-align: center;
   /* background: #000; */
-  padding: 20px;
+  padding: 0px;
   margin-right: 25px;
+}
+
+.leftSide > h2 {
+  width: 110px;
+  text-align: center;
+  font-size: 19px;
+  color: grey;
+  font-weight: 400;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 0px;
 }
 
 .leftSide > img {
@@ -33,32 +44,48 @@
   margin-top: 5px;
 }
 
-.leftSide > h2 {
-  width: 320px;
-  text-align: center;
-  font-size: 20px;
-  font-weight: 600;
-  color: grey;
-  margin-top: 5px;
-  font-weight: 400;
+.company,
+.userName {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0px;
+  margin-bottom: 20px;
 }
 
-.leftSide > h2 > span {
-  text-align: center;
-  font-size: 20px;
+.company > div > h2,
+.userName > div > h2 {
+  width: 110px;
+  text-align: right;
+  font-size: 19px;
+  color: grey;
+  font-weight: 400;
+  margin: 0px;
+  margin-top: 20px;
+}
+
+.company > div > h3,
+.userName > div > h3 {
+  text-align: left;
+  font-size: 19px;
   font-weight: 600;
   color: rgb(66, 65, 65);
-  margin-top: 5px;
+  width: 210px;
+  margin: 0px;
+  margin-top: 20px;
+}
+
+.company > div > h3 {
+  width: 230px;
 }
 
 .leftSide > hr {
-  width: 280px;
+  width: 300px;
   text-align: center;
   font-size: 20px;
   font-weight: 600;
   color: rgb(66, 65, 65);
   margin-top: 5px;
-  margin-left: 40px;
 }
 
 /* -------------- (right side)---------- */
@@ -78,22 +105,31 @@
 }
 
 .address {
-  margin-left: 30px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0px;
+  margin-bottom: 30px;
 }
 
-.address > h2 {
-  font-size: 20px;
-  font-weight: 600;
+.address > div > h2 {
+  width: 110px;
+  text-align: right;
+  font-size: 19px;
   color: grey;
-  margin-top: 5px;
   font-weight: 400;
+  margin: 0px;
+  margin-top: 20px;
 }
 
-.address > h2 > span {
-  font-size: 20px;
+.address > div > h3 {
+  text-align: left;
+  font-size: 19px;
   font-weight: 600;
   color: rgb(66, 65, 65);
-  margin-top: 5px;
+  width: 210px;
+  margin: 0px;
+  margin-top: 20px;
 }
 
 /* ---------- (map)------ */
@@ -105,7 +141,7 @@
   display: flex;
   gap: 30px;
   justify-content: right;
-  padding-right: 25px;
+  padding-right: 5px;
   margin-top: 10px;
 }
 

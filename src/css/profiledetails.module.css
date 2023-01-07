@@ -1,0 +1,69 @@
+.MainDiv {
+  position: absolute;
+  right: 4%;
+  top: 13%;
+  background: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.493) 0px 3px 8px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+  width: 310px;
+  overflow: hidden;
+}
+
+.profile {
+  padding: 20px 70px;
+}
+
+.profile > img {
+  width: 100px;
+  border-radius: 100px;
+}
+
+.profile > p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.profile > p {
+  font-weight: 500;
+  color: rgb(74, 72, 72);
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.profile > p:last-child {
+  font-weight: 400;
+  color: grey;
+  font-size: 16px;
+  margin-top: 9px;
+}
+
+/* -----------get profile ------- */
+.MainDiv > hr {
+  color: grey;
+  width: 81%;
+  margin-left: 28px;
+  margin-top: -10px;
+}
+
+.getProfile {
+  height: 95px;
+  overflow: hidden;
+  padding-right: 30px;
+  width: 320px;
+}
+
+/* ------------ signout_button ------- */
+
+.signout_button {
+  background: #d55151;
+  color: #ffffff;
+  border-color: transparent;
+  border-radius: 20px;
+  font-size: 18px;
+  padding: 6px 16px;
+  margin-top: 20px;
+  cursor: pointer;
+}

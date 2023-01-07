@@ -21,6 +21,7 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 0px;
   padding-bottom: 20px;
+  padding-right: 10px;
 }
 
 .card_top {
@@ -29,6 +30,7 @@
   padding: 30px;
   position: relative;
   margin-top: 0px;
+  margin-right: -10px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
 }
