@@ -6,10 +6,10 @@
 }
 
 /* --------------- left navbar ----------- */
-.mainDiv{
+.mainDiv {
   background: linear-gradient(180deg, #395bc8 0%, #5e3bc8 100%);
   width: 12%;
-  /* height: 600px; */
+  height: 500px;
   border-radius: 30px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   margin-top: 20px;
@@ -29,6 +29,16 @@
 .mainDiv > p {
   font-weight: 500;
   font-size: 18px;
+}
+
+.profile {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.profile > h2 {
+  color: rgb(67, 65, 65);
 }
 
 /* ----------- Profile top ---------- */
@@ -66,3 +76,4 @@
   font-weight: 500;
   color: rgba(56, 55, 55, 0.822);
 }
+

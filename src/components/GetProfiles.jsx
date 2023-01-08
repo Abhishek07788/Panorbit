@@ -1,27 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { getProfile } from "../Api/api";
+import { AppContest } from "../contestApi/ContestProvider";
 import style from "../css/getprofile.module.css";
 
 const GetProfiles = () => {
-  const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(false);
+  const { data, loading, error, getAllData } = useContext(AppContest); // getting data from contest api
 
-  // ------------ Getting data from Api -------
   useEffect(() => {
-    setLoading(true);
-    setError(false);
-    getProfile()
-      .then((res) => {
-        setData(res.data.users);
-        setLoading(false);
-        setError(false);
-      })
-      .catch((e) => {
-        setLoading(false);
-        setError(true);
-      });
+    getAllData();
   }, []);
 
   // -------- loading ---------
@@ -46,7 +33,7 @@ const GetProfiles = () => {
                 <p>{el.name}</p>
               </div>
             </Link>
-              <hr />
+            <hr />
           </div>
         ))}
     </div>

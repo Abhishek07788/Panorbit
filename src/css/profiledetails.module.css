@@ -43,6 +43,7 @@
 /* -----------get profile ------- */
 .MainDiv > hr {
   color: grey;
+  /* color: #ded8d8; */
   width: 81%;
   margin-left: 28px;
   margin-top: -10px;

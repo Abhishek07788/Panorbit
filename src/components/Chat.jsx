@@ -2,28 +2,15 @@ import React, { useEffect, useState } from "react";
 import style from "../css/chat.module.css";
 import { BsChatRight } from "react-icons/bs";
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";
-import { getProfile } from "../Api/api";
+import { useContext } from "react";
+import { AppContest } from "../contestApi/ContestProvider";
 
 const Chat = () => {
-  const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(false);
+  const { data, loading, error, getAllData } = useContext(AppContest); // getting data from contest api
   const [hide, setHide] = useState(false);
 
-  // ------------ Getting data from Api -------
   useEffect(() => {
-    setLoading(true);
-    setError(false);
-    getProfile()
-      .then((res) => {
-        setData(res.data.users);
-        setLoading(false);
-        setError(false);
-      })
-      .catch((e) => {
-        setLoading(false);
-        setError(true);
-      });
+    getAllData();
   }, []);
 
   // -------- loading ---------

@@ -1,0 +1,34 @@
+.mainDiv {
+  display: flex;
+  width: 95%;
+  margin: auto;
+}
+
+.topDiv {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding: 30px;
+}
+
+.profile {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.profile > h2 {
+  color: rgb(67, 65, 65);
+}
+
+.screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10%;
+}
+
+.ComingSoon {
+  font-size: 6rem;
+  color: #ded8d8;
+}
