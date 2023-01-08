@@ -1,33 +1,59 @@
 import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import style from "../css/homepage.module.css";
 
 const LeftNav = () => {
-  const [id, setId] = useState("1")
+  const [id, setId] = useState("1");
 
-  useEffect(()=>{
-    setId(sessionStorage.getItem("id") || 1)
-  },[])
+  useEffect(() => {
+    setId(sessionStorage.getItem("id") || 1);
+  }, []);
 
   return (
     <div className={style.mainDiv}>
-      <p>
-        <Link to={`/homepage/${id}`}>Profile</Link>
-      </p>
+      <NavLink
+        to={`/homepage/${id}`}
+        className={({ isActive }) =>
+          isActive ? style.active : style.notActive
+        }
+      >
+        <p>Profile</p>
+      </NavLink>
+
       <hr />
-      <p>
-        <Link to="/post">Posts</Link>
-      </p>
+      
+      <NavLink
+        to="/post"
+        className={({ isActive }) =>
+          isActive ? style.active : style.notActive
+        }
+      >
+        <p>Posts</p>
+      </NavLink>
+     
       <hr />
-      <p>
-        <Link to="/gallery"> Gallery </Link>
-      </p>
+     
+      <NavLink
+        to="/gallery"
+        className={({ isActive }) =>
+          isActive ? style.active : style.notActive
+        }
+      >
+        <p>Gallery</p>
+      </NavLink>
+     
       <hr />
-      <p>
-        <Link to="/todo"> ToDo </Link>
-      </p>
+    
+      <NavLink
+        to="/todo"
+        className={({ isActive }) =>
+          isActive ? style.active : style.notActive
+        }
+      >
+        <p>ToDo</p>
+      </NavLink>
     </div>
   );
 };

@@ -22,23 +22,35 @@
 }
 
 .mainDiv > hr {
-  color: #ffffff0c;
+  color: #5c58580c;
   border-radius: 30px;
 }
 
-.mainDiv > p {
-  font-weight: 500;
+.active {
+  color: #ffffff;
   font-size: 18px;
-}
-
-.profile {
+  letter-spacing: 1px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  width: 100%;
+  padding: 0%;
 }
 
-.profile > h2 {
-  color: rgb(67, 65, 65);
+.active::after {
+  content: ">";
+  margin-left: 0px;
+  font-weight: bold;
+  background: #ffffff;
+  color: grey;
+  border-radius: 50px 1px 1px 50px;
+  padding: 6px 7px;
+  margin-right: -56px;
+}
+
+.notActive {
+  color: #b3afaf;
+  font-size: 18px;
+  letter-spacing: 1px;
 }
 
 /* ----------- Profile top ---------- */
@@ -58,6 +70,15 @@
   color: rgba(39, 38, 38, 0.822);
 }
 
+.profile {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.profile > h2 {
+  color: rgb(67, 65, 65);
+}
 /* ---------------- Profile ----------- */
 .profile {
   display: flex;
@@ -76,4 +97,3 @@
   font-weight: 500;
   color: rgba(56, 55, 55, 0.822);
 }
-

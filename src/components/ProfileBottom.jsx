@@ -74,7 +74,7 @@ const ProfileBottom = (props) => {
         </div>
         {/* ---------- (map)---------- */}
         <iframe
-          width="670"
+          width="100%"
           height="350"
           className={style.Map}
           src={`https://maps.google.com/maps?q=${address.street},t=&z=13&ie=UTF8&iwloc=&output=embed`}

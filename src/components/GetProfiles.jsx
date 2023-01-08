@@ -1,6 +1,5 @@
-import React, { useContext, useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-import { getProfile } from "../Api/api";
+import React, { useContext, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 import { AppContest } from "../contestApi/ContestProvider";
 import style from "../css/getprofile.module.css";
 
@@ -27,12 +26,14 @@ const GetProfiles = () => {
       {data &&
         data.map((el) => (
           <div key={el.id}>
-            <Link to={`/homepage/${el.id}`}>
+            <NavLink
+              to={`/homepage/${el.id}`}
+            >
               <div className={style.maping_div}>
                 <img src={el.profilepicture} alt="profile image" />
                 <p>{el.name}</p>
               </div>
-            </Link>
+            </NavLink>
             <hr />
           </div>
         ))}
